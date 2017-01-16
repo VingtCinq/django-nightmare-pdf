@@ -27,21 +27,21 @@ Install using `pip` :
 `pip install nightmare_pdf`
 
 
-Add `nightmare_pdf' to your INSTALLED_APPS setting.
+Add `nightmare_pdf` to your INSTALLED_APPS setting.
 
-"""
-	INSTALLED_APPS = (
-	    ...
-	    'nightmare_pdf',
-	)
-"""
+
+    INSTALLED_APPS = (
+        ...
+        'nightmare_pdf',
+    )
+
 
 
 ## Usage
 
 Generate a pdf from an url and save it to database, or retrieve it as a ContentFile, or return it inside an HttpResponse :
 
-"""python
+
 	from nightmare_pdf import PDFGenerator
 
 	pdf = PDFGenerator(url="https://github.com/charlesthk/django-nightmare-pdf",
@@ -57,7 +57,7 @@ Generate a pdf from an url and save it to database, or retrieve it as a ContentF
 
 	# Return a Django HttpResponse with the PDF Attached :
 	return pdf.get_http_response('nightmare_pdf')
-"""
+
 
 ## Support
 
