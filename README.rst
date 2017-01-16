@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 |nightmare\_pdf v0.0.1 on PyPi| |MIT license| |Stable|
+=======
+|nightmare_pdf v2.0.3 on PyPi| |MIT license| |Stable|
+>>>>>>> origin/master
 
 django-nightmare-pdf
 ====================
