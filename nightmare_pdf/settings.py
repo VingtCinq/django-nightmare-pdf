@@ -3,7 +3,7 @@ Settings for Nightmare PDF are all namespaced in the NIGHTMARE_PDF setting.
 For example your project's `settings.py` file might look like this:
 
 NIGHTMARE_PDF = {
-    'UPLOAD_TO': 'pdfs/',
+    'UPLOAD_TO': 'pdfs',
 }
 
 This module provides the `pdf_setting` object, that is used to access
@@ -20,7 +20,7 @@ from django.test.signals import setting_changed
 NIGHTMARE_PDF_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DEFAULTS = {
-    'UPLOAD_TO': os.path.join(settings.BASE_DIR, 'pdfs'),
+    'UPLOAD_TO': 'pdfs',
     'NODE_PATH': 'node',
     'DEFAULT_RENDER_SCRIPT': os.path.join(NIGHTMARE_PDF_DIR, 'render_pdf.js'),
     'DEFAULT_TEMP_DIR': os.path.join(settings.BASE_DIR, 'pdf_temp')
