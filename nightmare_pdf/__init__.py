@@ -14,7 +14,3 @@ __copyright__ = 'Copyright 2017 Charles TISSIER'
 
 # Version synonym
 VERSION = __version__
-
-from .generators import PDFGenerator
-
-__all__ = ['PDFGenerator']

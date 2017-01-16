@@ -1,4 +1,4 @@
-[![nightmare-pdf v0.0.3 on PyPi](https://img.shields.io/badge/pypi-0.0.3-green.svg)](https://pypi.python.org/pypi/nightmare-pdf)
+[![nightmare-pdf v0.0.6 on PyPi](https://img.shields.io/badge/pypi-0.0.6-green.svg)](https://pypi.python.org/pypi/nightmare-pdf)
 ![MIT license](https://img.shields.io/badge/licence-MIT-blue.svg)
 ![Stable](https://img.shields.io/badge/status-stable-green.svg)
 
@@ -42,7 +42,7 @@ Add `nightmare_pdf` to your INSTALLED_APPS setting.
 Generate a pdf from an url and save it to database, or retrieve it as a ContentFile, or return it inside an HttpResponse :
 
 
-	from nightmare_pdf import PDFGenerator
+	from nightmare_pdf.generators import PDFGenerator
 
 	pdf = PDFGenerator(url="https://github.com/charlesthk/django-nightmare-pdf",
 	

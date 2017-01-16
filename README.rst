@@ -1,4 +1,4 @@
-|nightmare-pdf v0.0.3 on PyPi| |MIT license| |Stable|
+|nightmare-pdf v0.0.6 on PyPi| |MIT license| |Stable|
 
 django-nightmare-pdf
 ====================
@@ -44,7 +44,7 @@ ContentFile, or return it inside an HttpResponse :
 
 ::
 
-    from nightmare_pdf import PDFGenerator
+    from nightmare_pdf.generators import PDFGenerator
 
     pdf = PDFGenerator(url="https://github.com/charlesthk/django-nightmare-pdf",
 
@@ -70,7 +70,7 @@ License
 
 The project is licensed under the MIT License.
 
-.. |nightmare-pdf v0.0.3 on PyPi| image:: https://img.shields.io/badge/pypi-0.0.3-green.svg
+.. |nightmare-pdf v0.0.6 on PyPi| image:: https://img.shields.io/badge/pypi-0.0.6-green.svg
    :target: https://pypi.python.org/pypi/nightmare-pdf
 .. |MIT license| image:: https://img.shields.io/badge/licence-MIT-blue.svg
 .. |Stable| image:: https://img.shields.io/badge/status-stable-green.svg

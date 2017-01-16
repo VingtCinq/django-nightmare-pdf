@@ -17,10 +17,12 @@ from django.conf import settings
 from django.test.signals import setting_changed
 
 
+NIGHTMARE_PDF_DIR = os.path.dirname(os.path.abspath(__file__))
+
 DEFAULTS = {
     'UPLOAD_TO': os.path.join(settings.BASE_DIR, 'pdfs'),
     'NODE_PATH': 'node',
-    'DEFAULT_RENDER_SCRIPT': os.path.join(settings.BASE_DIR, 'nightmare_pdf/render_pdf.js'),
+    'DEFAULT_RENDER_SCRIPT': os.path.join(NIGHTMARE_PDF_DIR, 'render_pdf.js'),
     'DEFAULT_TEMP_DIR': os.path.join(settings.BASE_DIR, 'pdf_temp')
 }
 
