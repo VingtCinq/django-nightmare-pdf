@@ -1,4 +1,4 @@
-|nightmare-pdf v0.0.1 on PyPi| |MIT license| |Stable|
+|nightmare-pdf v0.0.2 on PyPi| |MIT license| |Stable|
 
 django-nightmare-pdf
 ====================
@@ -70,7 +70,7 @@ License
 
 The project is licensed under the MIT License.
 
-.. |nightmare-pdf v0.0.1 on PyPi| image:: https://img.shields.io/badge/pypi-0.0.1-green.svg
+.. |nightmare-pdf v0.0.2 on PyPi| image:: https://img.shields.io/badge/pypi-0.0.2-green.svg
    :target: https://pypi.python.org/pypi/nightmare-pdf
 .. |MIT license| image:: https://img.shields.io/badge/licence-MIT-blue.svg
 .. |Stable| image:: https://img.shields.io/badge/status-stable-green.svg
