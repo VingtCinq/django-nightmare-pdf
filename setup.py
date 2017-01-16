@@ -15,7 +15,7 @@ except Exception:
 
 setup(
     name='nightmare_pdf',
-    version='0.0.6',
+    version='0.0.8',
     description='Convert HTML to pdf with django using nightmarejs',
     long_description=long_description,
     url='https://github.com/charlesthk/django-nightmare-pdf',
@@ -41,6 +41,7 @@ setup(
     ],
     keywords='python django pdf html nightmare',
     packages=find_packages(),
+    include_package_data=True,
     # install_requires=[],
     # test_suite='tests',
 )
