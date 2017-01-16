@@ -1,1 +1,1 @@
-include nightmare_pdf/render_pdf.js
+include nightmare_pdf/*.js
