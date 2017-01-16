@@ -1,4 +1,4 @@
-|nightmare\_pdf v2.0.3 on PyPi| |MIT license| |Stable|
+|nightmare_pdf v2.0.3 on PyPi| |MIT license| |Stable|
 
 django-nightmare-pdf
 ====================
