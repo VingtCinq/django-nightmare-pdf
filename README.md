@@ -1,4 +1,4 @@
-[![nightmare_pdf v0.0.1 on PyPi](https://img.shields.io/badge/pypi-0.0.1-green.svg)](https://pypi.python.org/pypi/nightmare_pdf)
+[![nightmare-pdf v0.0.1 on PyPi](https://img.shields.io/badge/pypi-0.0.1-green.svg)](https://pypi.python.org/pypi/nightmare-pdf)
 ![MIT license](https://img.shields.io/badge/licence-MIT-blue.svg)
 ![Stable](https://img.shields.io/badge/status-stable-green.svg)
 
