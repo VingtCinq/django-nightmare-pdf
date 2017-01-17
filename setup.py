@@ -15,7 +15,7 @@ except Exception:
 
 setup(
     name='nightmare_pdf',
-    version='0.0.9',
+    version='0.1.0',
     description='Convert HTML to pdf with django using nightmarejs',
     long_description=long_description,
     url='https://github.com/charlesthk/django-nightmare-pdf',
@@ -28,6 +28,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: MIT License',
         'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.9',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.3',
         'Programming Language :: Python :: 2.4',

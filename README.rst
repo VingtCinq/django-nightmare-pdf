@@ -1,4 +1,4 @@
-|nightmare-pdf v0.0.9 on PyPi| |MIT license| |Stable|
+|nightmare-pdf v0.1.10 on PyPi| |MIT license| |Stable|
 
 django-nightmare-pdf
 ====================
@@ -9,7 +9,7 @@ Requirements
 ------------
 
 -  Python (2.7) (Need to be tested for 3.x)
--  Django (1.10) (Need to be tested for previous versions)
+-  Django (1.10, 1.9) (Need to be tested for previous versions)
 
 Dependencies
 ------------
@@ -59,11 +59,11 @@ ContentFile, or return it inside an HttpResponse :
             title="nightmare_pdf on github",
             description="Convert HTML to pdf with django using nightmare")
 
-    # Get the PDf as a Django ContentFiel :
-    pdf_content_file = pdf.get_content_file('nightmare_pdf') 
+    # Get the PDf as a Django ContentFile named 'my_pdf_file.pdf' :
+    pdf_content_file = pdf.get_content_file('my_pdf_file') 
 
-    # Return a Django HttpResponse with the PDF Attached :
-    return pdf.get_http_response('nightmare_pdf')
+    # Return a Django HttpResponse with the PDF Attached named 'my_pdf_file.pdf':
+    return pdf.get_http_response('my_pdf_file')
 
 ``PDFGenerator`` options
 ------------------------
@@ -152,7 +152,7 @@ License
 
 The project is licensed under the MIT License.
 
-.. |nightmare-pdf v0.0.9 on PyPi| image:: https://img.shields.io/badge/pypi-0.0.9-green.svg
+.. |nightmare-pdf v0.1.10 on PyPi| image:: https://img.shields.io/badge/pypi-0.1.10-green.svg
    :target: https://pypi.python.org/pypi/nightmare-pdf
 .. |MIT license| image:: https://img.shields.io/badge/licence-MIT-blue.svg
 .. |Stable| image:: https://img.shields.io/badge/status-stable-green.svg

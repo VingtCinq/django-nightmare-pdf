@@ -1,6 +1,7 @@
 import subprocess
 import os
 import random
+from django.core.validators import URLValidator
 from nightmare_pdf.settings import pdf_settings
 from django.http import (
 	HttpResponse,
@@ -10,11 +11,15 @@ from django.core.files.base import ContentFile
 from .models import PdfDoc
 
 
+validate_url = URLValidator(schemes=['https', 'http'])
+
+
 class PDFGenerator(object):
 
 	def __init__(self, url, timeout=1000, page_size='A4', landscape=0, 
 				 print_background=1, margins_type=1, script=pdf_settings.DEFAULT_RENDER_SCRIPT,
 				 temp_dir=pdf_settings.DEFAULT_TEMP_DIR):
+		validate_url(url)
 		self.url = url
 		self.filename = self.__get_random_filename()
 		self.filepath = self.__get_filepath()
