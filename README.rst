@@ -20,6 +20,9 @@ first install it using ``npm``:
 
 ``npm install nightmare``
 
+*Warning*, as of today, getting nightmare/electron to work on linux is
+not that easy.
+
 Installation
 ------------
 

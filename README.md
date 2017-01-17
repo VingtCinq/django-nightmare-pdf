@@ -18,6 +18,8 @@ This django app depends on [Nightmare](https://github.com/segmentio/nightmare), 
 
 `npm install nightmare`
 
+*Warning*, as of today, getting nightmare/electron to work on linux is not that easy.
+
 
 ## Installation
 
