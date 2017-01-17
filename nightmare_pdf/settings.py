@@ -13,7 +13,6 @@ back to the defaults.
 from __future__ import unicode_literals
 import os
 
-from django.conf import settings
 from django.test.signals import setting_changed
 
 
@@ -23,7 +22,8 @@ DEFAULTS = {
     'UPLOAD_TO': 'pdfs',
     'NODE_PATH': 'node',
     'DEFAULT_RENDER_SCRIPT': os.path.join(NIGHTMARE_PDF_DIR, 'render_pdf.js'),
-    'DEFAULT_TEMP_DIR': os.path.join(settings.BASE_DIR, 'pdf_temp')
+    'DEFAULT_TEMP_DIR': os.path.join(NIGHTMARE_PDF_DIR, 'temp'),
+    'TEMPLATES_DIR': os.path.join(NIGHTMARE_PDF_DIR, 'templates/nightmare_pdf')
 }
 
 

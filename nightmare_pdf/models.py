@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from nightmare_pdf.settings import pdf_settings
+from .settings import pdf_settings
 
 
 class PdfDoc(models.Model):

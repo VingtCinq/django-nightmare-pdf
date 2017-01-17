@@ -1,6 +1,5 @@
 import subprocess
 import os
-import random
 from django.core.validators import URLValidator
 from nightmare_pdf.settings import pdf_settings
 from django.http import (
@@ -9,6 +8,7 @@ from django.http import (
 )
 from django.core.files.base import ContentFile
 from .models import PdfDoc
+from .utils import get_random_filename
 
 
 validate_url = URLValidator(schemes=['https', 'http'])
@@ -37,8 +37,7 @@ class PDFGenerator(object):
 
 
 	def __get_random_filename(self):
-		choices = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-		name = "".join([random.choice(choices) for i in range(50)])
+		name = get_random_filename(20)
 		return "%s.pdf" % name
 
 
